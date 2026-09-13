@@ -1,8 +1,8 @@
 # UNIque Manzanita: website
 
 Design preview for **UNIque Manzanita Company**, Brownsville, Yuba County,
-California. Graded California manzanita for aquarium, terrarium and
-bird-habitat use.
+California. A proposed wholesale range of small, medium and large manzanita
+pieces for pet and aquarium retailers, with larger pieces by special order.
 
 Live at **https://preview.uniquemanzanita.com**
 
@@ -33,20 +33,22 @@ address:
 
 | Page | Covers |
 |---|---|
-| `#home` | The position, and the three audiences |
-| `#range` | Four size grades with published envelopes |
-| `#exact` | One-of-a-kind serialised pieces |
-| `#origin` | The stand, and the lot-code system |
-| `#trade` | Wholesale, OEM and private label |
+| `#home` | The proposed wholesale range and example starter assortment |
+| `#range` | Small, medium and large, with size limits still to be confirmed |
+| `#exact` | The planned process for larger special orders through a retailer |
+| `#origin` | The California source and planned batch records |
+| `#trade` | Retail packaging, pricing information and future restocking |
 
 ## The idea it is built on
 
-Buyers do not buy a length, they buy a shape that has to fit a space. So every
-piece is described by its **envelope**, the maximum external box it occupies,
-measured at the widest point on each axis rather than along its longest branch.
-That is the number that decides whether a piece clears a bracing bar, and it is
-the number that sets the shipping charge, because size rather than weight
-prices most parcels.
+Retailers could start with a mixed assortment, sell pieces individually and
+restock by size. The example mix is six small, six medium and three large
+pieces, 15 in total. It is a planning example, not a confirmed case pack.
+
+The planned specifications distinguish three measurements: the space occupied
+by the wood, its retail package and its packed shipping case. Overall length,
+width and height help describe fit. Packaging and freight terms will follow
+sample measurements, preparation costing and packing trials.
 
 ## Design notes
 
@@ -71,6 +73,12 @@ These are not stylistic. They come from the company's own release gates.
    species or enclosure.
 3. **No environmental or sustainability claim.**
 4. **Every price and dimension marked provisional.**
+5. **No product photography claims.** The current photographs show wild
+   manzanita, not this source or a product.
+6. **Keep the preview banner and footer disclaimers** until a product is
+   released.
+7. **No named buyer, retailer, distributor or brand** that would imply a
+   relationship.
 
 ## Photography
 
@@ -91,7 +99,8 @@ Commons. Original product photography replaces them before anything is offered.
 
 Everything is in `index.html`: styles at the top, content in the middle,
 a small router at the bottom. Content lives in plain HTML except the grade
-table, which builds from the `GRADES` array in the script so the four rows
+table, which builds from the `GRADES` array in the script so the three rows
 cannot drift out of step.
 
-Changes to the page must not break the four copy rules above.
+Changes to the page must not break the seven copy rules above. Local drafts
+are excluded from Git by `/_DRAFTS/` in `.gitignore`.
