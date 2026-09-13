@@ -56,6 +56,24 @@ contents. An eight-pound branch in a large carton can bill as thirty-four
 pounds. A business selling a light, bulky, awkward product either understands
 this or loses money on every order.
 
+### Who the customer is
+
+**Retailers. This is a wholesale business.**
+
+The customer is the shop, not the person who walks into it. The goal is the
+product on the shelf of every specialty pet, aquatic and reptile store that
+will carry it, sold in cases a store can reorder. A store buys twelve pieces,
+three sizes, four of each, and retails them out.
+
+**The hero product is therefore the assortment, not the grade.** The case is
+what a buyer purchases, so the case is what the site sells.
+
+Direct-to-consumer exists but is deliberately **subordinate**, and must stay
+that way. If a shop owner sees this site selling the same piece at retail price
+next to the trade offer, U are their competitor and they hesitate. Never give
+consumer purchase more prominence than the trade offer, and never undercut the
+suggested retail position.
+
 ### The position this site takes
 
 **Sell the envelope, not the length.**
@@ -74,10 +92,11 @@ a second worker can follow, so the second case matches the first; lot codes
 tying every piece to the batch and the preparation record behind it; and serial
 numbers on one-of-a-kind pieces so the item photographed is the item shipped.
 
-### Who it sells to
+### Who the retailer's customers are
 
-Three audiences who want different things from the same branch. The site has to
-serve all three without pretending one pile of wood suits everybody.
+Three end audiences who want different things from the same branch. The site
+speaks to the **buyer** about all three, because a store needs to know the range
+serves its whole aisle, not one shelf.
 
 | Audience | What they are actually buying | What they judge it on |
 |---|---|---|
@@ -85,10 +104,18 @@ serve all three without pretending one pile of wood suits everybody.
 | **Reptile keepers** | Climbing structure for arboreal species | Diameter at the trunk and at the fork, fork angle, not length |
 | **Aviculturists** | Perch stock cut to a specification they set | Diameter band, bark on or off, squared ends |
 
-Plus a fourth, commercially the most important: **trade buyers.** Independent
-retailers, distributors, and brands wanting private-label supply. They care
-about case packs, pallet dimensions, lead times, reorder simplicity and whether
-the second shipment matches the first.
+**What the buyer themselves cares about** is different again, and it is the
+question the site has to answer first: *what does this earn me per foot of
+shelf per month.* Case packs, pallet dimensions, lead times, reorder
+simplicity, margin, and whether the second shipment matches the first.
+
+**One spec problem to know about.** Three of those three end audiences buy on
+**diameter**, not length. Only aquascaping leads on overall size. Bird perch
+stock is sized to foot span, roughly 1.25 to 2.5 inches for the large parrots
+manzanita actually suits; it is too hard for small beaks to work. Reptile
+climbing stock runs roughly 0.5 to 3 inches. The published range is still
+banded by length, which means a bird buyer cannot order from it. Fixing that is
+real work and needs Evan, because the diameter figures do not exist yet.
 
 ### Where the business actually is right now
 
@@ -115,13 +142,14 @@ away.** It is what makes the precise claims elsewhere on the page believable.
 
 Not a store. Its jobs, in order:
 
-1. **Establish that this is a serious supplier** rather than someone selling
+1. **Get a trade buyer to ask for the line sheet.** That is the one conversion
+   that matters commercially. Everything else serves it.
+2. **Establish that this is a serious supplier** rather than someone selling
    yard clippings, in the ten seconds before a buyer decides.
-2. **Teach the envelope idea**, so a buyer starts thinking in three dimensions.
-3. **Get a trade buyer to ask for the line sheet.** That is the one conversion
-   that matters commercially.
-4. **Serve all three consumer audiences** without any of them feeling like an
-   afterthought.
+3. **Teach the envelope idea**, so a buyer thinks in three dimensions and
+   understands why the shipping is honest.
+4. **Show the range covers the whole aisle**, so a store sees more than one
+   shelf position.
 
 ### Where it goes next
 
