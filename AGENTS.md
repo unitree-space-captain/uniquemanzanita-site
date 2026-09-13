@@ -109,8 +109,8 @@ question the site has to answer first: *what does this earn me per foot of
 shelf per month.* Case packs, pallet dimensions, lead times, reorder
 simplicity, margin, and whether the second shipment matches the first.
 
-**One spec problem to know about.** Three of those three end audiences buy on
-**diameter**, not length. Only aquascaping leads on overall size. Bird perch
+**One spec problem to know about.** Two of those three end audiences buy on
+**diameter**, not length, and so does the small-mammal chew market if it opens. Only aquascaping leads on overall size. Bird perch
 stock is sized to foot span, roughly 1.25 to 2.5 inches for the large parrots
 manzanita actually suits; it is too hard for small beaks to work. Reptile
 climbing stock runs roughly 0.5 to 3 inches. The published range is still
