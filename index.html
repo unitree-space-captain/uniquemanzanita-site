@@ -1,0 +1,686 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Design preview. UNIque Manzanita Company, Brownsville, Yuba County, California. Not a live store.">
+<title>UNIque Manzanita</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+
+<style>
+/* ============================================================
+   UNIque Manzanita &middot; design preview
+   Brownsville, Yuba County, California
+   Palette sampled from the photographs: live mahogany bark,
+   weathered silver heartwood, glaucous leaf, dry foothill grass.
+   ============================================================ */
+
+:root {
+  --paper:      #EDEDE8;
+  --paper-lift: #F6F6F2;
+  --mist:       #DEDFD8;
+  --hair:       #C6C7BE;
+  --ink:        #191A17;
+  --ink-soft:   #4F5249;
+  --ink-faint:  #85887C;
+  --bark:       #8E3E27;
+  --bark-lit:   #B55B3C;
+  --bloom:      #CE8F8A;
+  --veil:       rgba(237,237,232,0.82);
+
+  --sans: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --serif: "Fraunces", "Iowan Old Style", Georgia, serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  --gutter: clamp(20px, 5vw, 78px);
+  --nav-h: 54px;
+
+  /* This page commits to one look. The palette was built around the
+     pale foothill ground in the photographs, and it is painted
+     explicitly so it holds whatever theme the viewer's browser is in. */
+  color-scheme: light;
+}
+
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0; background: var(--paper); color: var(--ink);
+  font-family: var(--sans); font-size: 17px; line-height: 1.5;
+  -webkit-font-smoothing: antialiased; overflow-x: hidden;
+}
+
+img { max-width: 100%; }
+
+/* ---------- type ---------- */
+
+h1, h2, h3 { margin: 0; text-wrap: balance; }
+h1 { font-size: clamp(46px, 9vw, 118px); line-height: 0.94; letter-spacing: -0.045em; font-weight: 600; }
+h2 { font-size: clamp(30px, 4.8vw, 56px); line-height: 1.04; letter-spacing: -0.032em; font-weight: 600; }
+h3 { font-size: clamp(19px, 2.2vw, 25px); line-height: 1.17; letter-spacing: -0.02em; font-weight: 600; }
+p { margin: 0; }
+
+.eyebrow {
+  font-family: var(--serif); font-optical-sizing: auto; font-weight: 400;
+  font-style: italic; font-size: 15px; color: var(--bark); margin: 0 0 16px;
+}
+.lede {
+  font-size: clamp(18px, 1.95vw, 22px); line-height: 1.47;
+  color: var(--ink-soft); max-width: 60ch; letter-spacing: -0.011em;
+}
+.spec {
+  font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.07em;
+  text-transform: uppercase; color: var(--ink-faint); font-variant-numeric: tabular-nums;
+}
+.note { font-size: 13.5px; line-height: 1.58; color: var(--ink-faint); max-width: 62ch; }
+
+/* ---------- preview bar ---------- */
+
+.preview-bar {
+  display: flex; flex-wrap: wrap; gap: 4px 13px;
+  align-items: baseline; justify-content: center;
+  padding: 8px var(--gutter);
+  background: var(--ink); color: var(--paper);
+  font-family: var(--mono); font-size: 10.5px;
+  letter-spacing: 0.08em; text-transform: uppercase;
+}
+.preview-bar b { font-weight: 500; color: var(--bloom); }
+.preview-bar span { opacity: 0.7; text-transform: none; letter-spacing: 0.01em; font-size: 11px; }
+
+/* ---------- navigation ---------- */
+
+nav {
+  position: sticky; top: 0; z-index: 50;
+  background: var(--veil);
+  -webkit-backdrop-filter: saturate(180%) blur(18px);
+          backdrop-filter: saturate(180%) blur(18px);
+  border-bottom: 1px solid var(--hair);
+}
+.nav-inner {
+  max-width: 1180px; margin: 0 auto; min-height: var(--nav-h);
+  padding: 0 var(--gutter);
+  display: flex; align-items: center; justify-content: space-between; gap: 18px;
+}
+.brand {
+  font-family: var(--serif); font-weight: 600; font-size: 18px;
+  letter-spacing: -0.022em; color: var(--ink);
+  background: none; border: none; padding: 0; cursor: pointer;
+  white-space: nowrap;
+}
+.brand i { font-style: normal; color: var(--bark); }
+.nav-links {
+  display: flex; align-items: center; gap: clamp(14px, 2.4vw, 30px);
+  overflow-x: auto; scrollbar-width: none;
+}
+.nav-links::-webkit-scrollbar { display: none; }
+.nav-links button {
+  background: none; border: none; padding: 6px 0; cursor: pointer;
+  font-family: var(--sans); font-size: 14px; font-weight: 400;
+  letter-spacing: -0.006em; color: var(--ink-soft); white-space: nowrap;
+  border-bottom: 1.5px solid transparent;
+  transition: color .18s ease, border-color .18s ease;
+}
+.nav-links button:hover { color: var(--ink); }
+.nav-links button[aria-current="page"] { color: var(--ink); border-bottom-color: var(--bark); }
+.nav-links button:focus-visible { outline: 2px solid var(--bark); outline-offset: 3px; }
+
+/* ---------- pages ---------- */
+
+.page { display: block; }
+.page[hidden] { display: none !important; }
+
+section { padding: clamp(58px, 8vw, 122px) var(--gutter); position: relative; }
+.wrap { max-width: 1180px; margin: 0 auto; }
+.bleed { width: 100vw; margin-left: calc(50% - 50vw); }
+
+/* ---------- photographs, dissolving into the ground ---------- */
+
+.photo { line-height: 0; position: relative; }
+.photo img { width: 100%; display: block; object-fit: cover; }
+
+.photo--hero img {
+  aspect-ratio: 21 / 9;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 30%, #000 58%, transparent 97%),
+                      linear-gradient(to right, transparent 0%, #000 13%, #000 87%, transparent 100%);
+          mask-image: linear-gradient(to bottom, transparent 0%, #000 30%, #000 58%, transparent 97%),
+                      linear-gradient(to right, transparent 0%, #000 13%, #000 87%, transparent 100%);
+  -webkit-mask-composite: source-in; mask-composite: intersect;
+}
+.photo--band img {
+  aspect-ratio: 16 / 7;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 20%, #000 78%, transparent 100%),
+                      linear-gradient(to right, transparent 0%, #000 11%, #000 89%, transparent 100%);
+          mask-image: linear-gradient(to bottom, transparent 0%, #000 20%, #000 78%, transparent 100%),
+                      linear-gradient(to right, transparent 0%, #000 11%, #000 89%, transparent 100%);
+  -webkit-mask-composite: source-in; mask-composite: intersect;
+}
+.photo--tall img {
+  aspect-ratio: 3 / 4;
+  -webkit-mask-image: radial-gradient(82% 76% at 50% 50%, #000 48%, transparent 94%);
+          mask-image: radial-gradient(82% 76% at 50% 50%, #000 48%, transparent 94%);
+}
+.backdrop { position: absolute; inset: 0; z-index: 0; overflow: hidden; line-height: 0; }
+.backdrop img {
+  width: 100%; height: 100%; object-fit: cover; opacity: 0.4;
+  -webkit-mask-image: radial-gradient(120% 90% at 76% 34%, #000 0%, transparent 72%);
+          mask-image: radial-gradient(120% 90% at 76% 34%, #000 0%, transparent 72%);
+}
+
+/* ---------- home ---------- */
+
+.hero-wordmark {
+  font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.16em;
+  text-transform: uppercase; color: var(--ink-faint);
+  margin-bottom: clamp(26px, 4vw, 44px);
+}
+h1 .quiet { color: var(--ink-faint); display: block; }
+
+.hero-sub {
+  display: grid; grid-template-columns: minmax(0,1fr) minmax(0,0.74fr);
+  gap: clamp(20px, 5vw, 66px); align-items: end; margin-top: clamp(26px, 3.5vw, 42px);
+}
+@media (max-width: 840px) { .hero-sub { grid-template-columns: 1fr; } }
+.hero-facts { display: flex; flex-wrap: wrap; gap: 12px 32px; }
+.hero-facts div { display: flex; flex-direction: column; gap: 3px; }
+.hero-facts .n {
+  font-family: var(--mono); font-size: 19px; font-weight: 500;
+  color: var(--ink); font-variant-numeric: tabular-nums; letter-spacing: -0.01em;
+}
+
+.worlds {
+  display: grid; grid-template-columns: repeat(3, minmax(0,1fr));
+  gap: clamp(22px, 4vw, 52px); margin-top: clamp(34px, 5vw, 64px);
+}
+@media (max-width: 860px) { .worlds { grid-template-columns: 1fr; } }
+.world { display: flex; flex-direction: column; gap: 13px; }
+.world .typical {
+  font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.04em;
+  color: var(--ink-faint); font-variant-numeric: tabular-nums;
+  padding-top: 15px; border-top: 2px solid var(--ink);
+}
+.world p.body { color: var(--ink-soft); font-size: 15.5px; line-height: 1.56; }
+.world .want {
+  font-family: var(--mono); font-size: 11px; letter-spacing: 0.06em;
+  text-transform: uppercase; color: var(--bark);
+  padding-top: 12px; border-top: 1px solid var(--hair); margin-top: auto;
+}
+
+/* ---------- tables ---------- */
+
+.tablescroll { overflow-x: auto; }
+.gradetable { width: 100%; border-collapse: collapse; margin-top: clamp(28px,3.5vw,44px); }
+.gradetable th, .gradetable td {
+  text-align: left; padding: 16px 20px 16px 0;
+  border-bottom: 1px solid var(--hair); vertical-align: baseline;
+}
+.gradetable th {
+  font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.07em;
+  text-transform: uppercase; color: var(--ink-faint); font-weight: 400;
+  border-bottom-color: var(--ink);
+}
+.gradetable td { font-size: 15px; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+.gradetable td.k { font-family: var(--mono); font-size: 13px; color: var(--ink); white-space: nowrap; }
+.gradetable td b { color: var(--ink); font-weight: 500; }
+
+/* ---------- two-column blocks ---------- */
+
+.split {
+  display: grid; grid-template-columns: minmax(0,1fr) minmax(0,0.9fr);
+  gap: clamp(26px, 4.5vw, 68px); align-items: center;
+}
+@media (max-width: 880px) { .split { grid-template-columns: 1fr; } }
+.stack { display: flex; flex-direction: column; gap: 20px; }
+
+/* ---------- record card ---------- */
+
+.dark { background: #14150F; color: #EDEDE8; overflow: hidden; }
+.dark .lede, .dark .note { color: rgba(237,237,232,0.66); }
+.dark .eyebrow { color: var(--bloom); }
+.record { border: 1px solid rgba(237,237,232,0.17); padding: clamp(20px,2.5vw,32px); }
+.record .id {
+  font-family: var(--mono); font-size: 14px; letter-spacing: 0.06em;
+  color: var(--bloom); display: block; margin-bottom: 16px;
+}
+.record dl { display: flex; flex-direction: column; margin: 0; }
+.record .r {
+  display: grid; grid-template-columns: 8.5rem minmax(0,1fr); gap: 14px;
+  padding: 9px 0; border-top: 1px solid rgba(237,237,232,0.12);
+}
+.record dt {
+  font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.06em;
+  text-transform: uppercase; color: rgba(237,237,232,0.45); padding-top: 3px;
+}
+.record dd { margin: 0; font-size: 14.5px; color: #EDEDE8; font-family: var(--mono); font-variant-numeric: tabular-nums; }
+
+/* ---------- lot ---------- */
+
+.lot {
+  font-family: var(--mono); font-size: clamp(17px, 3vw, 33px);
+  color: var(--ink); margin: clamp(22px,3vw,34px) 0 10px;
+  overflow-x: auto; white-space: nowrap; padding-bottom: 6px;
+}
+.lot i { font-style: normal; color: var(--bark); }
+.lotkey {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(175px,1fr));
+  gap: 20px 32px; margin-top: 22px;
+}
+.lotkey div { display: flex; flex-direction: column; gap: 5px; }
+.lotkey b { font-family: var(--mono); font-size: 12px; letter-spacing: 0.05em; color: var(--bark); font-weight: 500; }
+.lotkey span { font-size: 14px; color: var(--ink-soft); line-height: 1.5; }
+
+/* ---------- checks + cta ---------- */
+
+.checks { display: flex; flex-direction: column; }
+.check {
+  display: grid; grid-template-columns: auto minmax(0,1fr); gap: 14px;
+  padding: 13px 0; border-bottom: 1px solid var(--hair);
+  font-size: 15.5px; color: var(--ink-soft);
+}
+.check:first-child { border-top: 1px solid var(--hair); }
+.check b { color: var(--ink); font-weight: 500; }
+.check .m { font-family: var(--mono); font-size: 11px; color: var(--bark); letter-spacing: 0.06em; padding-top: 4px; }
+
+.cta {
+  display: inline-flex; align-items: center; gap: 10px; align-self: flex-start;
+  padding: 13px 26px; border-radius: 999px;
+  background: var(--bark); color: #FFF7F2; border: none; cursor: pointer;
+  font-family: var(--sans); font-size: 15px; font-weight: 500;
+  text-decoration: none; transition: background .2s ease;
+}
+.cta:hover { background: var(--bark-lit); }
+.cta:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+.cta .arrow { font-family: var(--mono); font-size: 13px; }
+
+.cta-ghost {
+  display: inline-flex; align-items: center; gap: 9px; align-self: flex-start;
+  background: none; border: none; padding: 6px 0; cursor: pointer;
+  font-family: var(--sans); font-size: 15.5px; font-weight: 500; color: var(--bark);
+  border-bottom: 1.5px solid var(--bark);
+}
+.cta-ghost:hover { color: var(--bark-lit); border-bottom-color: var(--bark-lit); }
+.cta-ghost:focus-visible { outline: 2px solid var(--bark); outline-offset: 4px; }
+
+/* ---------- footer ---------- */
+
+footer { padding: clamp(44px,6vw,74px) var(--gutter) clamp(32px,4vw,50px); border-top: 1px solid var(--hair); background: var(--paper-lift); }
+.foot-grid {
+  max-width: 1180px; margin: 0 auto;
+  display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1.3fr);
+  gap: clamp(24px,4vw,60px);
+}
+@media (max-width: 780px) { .foot-grid { grid-template-columns: 1fr; } }
+.disclaimers { display: flex; flex-direction: column; gap: 10px; }
+.disclaimers p { font-size: 12.5px; line-height: 1.6; color: var(--ink-faint); max-width: 64ch; }
+.disclaimers p b { color: var(--ink-soft); font-weight: 500; }
+.credits { margin-top: 20px; font-size: 11px; line-height: 1.75; color: var(--ink-faint); font-family: var(--mono); }
+</style>
+
+<div class="preview-bar">
+  <b>Design preview</b>
+  <span>Not a live store. Nothing released or offered for sale. Photographs show manzanita in the wild, not product.</span>
+</div>
+
+<nav>
+  <div class="nav-inner">
+    <button class="brand" data-go="home">UNI<i>que</i> Manzanita</button>
+    <div class="nav-links" id="navLinks"></div>
+  </div>
+</nav>
+
+<main>
+
+<!-- ============================ HOME ============================ -->
+<div class="page" id="page-home">
+  <section style="padding-bottom:0">
+    <div class="wrap">
+      <p class="hero-wordmark">Brownsville &middot; Yuba County &middot; California</p>
+      <h1>Sold by the space<span class="quiet">it has to fit.</span></h1>
+      <div class="hero-sub">
+        <p class="lede">
+          Manzanita grows crooked. No two branches take the same shape, and the
+          length printed on a label tells U almost nothing about whether a piece
+          will sit in ur tank. So we measure the box each piece occupies,
+          publish it, and let U buy against the space U actually have.
+        </p>
+        <div class="hero-facts">
+          <div><span class="n">4</span><span class="spec">Size grades</span></div>
+          <div><span class="n">3</span><span class="spec">Dimensions published</span></div>
+          <div><span class="n">1</span><span class="spec">Lot code per piece</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="photo photo--hero bleed" style="margin-top:clamp(30px,4vw,56px)">
+      <img src="img/hero.jpg" alt="Manzanita heartwood: a band of deep red live bark meeting weathered silver-grey wood, the grain flowing in a long curve between them." width="1920" height="1037">
+    </div>
+  </section>
+
+  <section style="padding-top:clamp(30px,4vw,56px)">
+    <div class="wrap">
+      <p class="eyebrow">Who it is cut for</p>
+      <h2>Three rooms, one material.</h2>
+      <p class="lede" style="margin-top:18px">
+        Aquascapers, keepers and aviculturists want different things from the
+        same branch. We grade for all three rather than pretending one pile of
+        wood serves everybody.
+      </p>
+
+      <div class="worlds">
+        <article class="world">
+          <p class="typical">20 &times; 10 &times; 12 &nbsp;to&nbsp; 48 &times; 18 &times; 21 in</p>
+          <h3>Aquarium</h3>
+          <p class="body">
+            Hardscape with a real silhouette. Fine terminal branching for scale,
+            a trunk section that holds a layout, and a published envelope so a
+            piece clears the bracing bar on the way in.
+          </p>
+          <p class="want">Graded on: branching density, footprint</p>
+        </article>
+        <article class="world">
+          <p class="typical">36 &times; 18 &times; 16 &nbsp;to&nbsp; 48 &times; 24 &times; 24 in</p>
+          <h3>Terrarium</h3>
+          <p class="body">
+            Climbing structure for arboreal species. Diameter matters more than
+            length, so the grade sheet gives the range at the trunk and at the
+            third fork, to match what ur animal actually grips.
+          </p>
+          <p class="want">Graded on: diameter range, fork angle</p>
+        </article>
+        <article class="world">
+          <p class="typical">30 &times; 18 &times; 36 &nbsp;to&nbsp; 64 &times; 32 &times; 64 in</p>
+          <h3>Aviary</h3>
+          <p class="body">
+            Perch stock cut to a specification U set. Bark on or bark off,
+            diameter banded, ends squared. Supplied as components; mounting
+            hardware is not part of the first range.
+          </p>
+          <p class="want">Graded on: diameter band, bark state</p>
+        </article>
+      </div>
+
+      <div style="margin-top:clamp(34px,4vw,54px)">
+        <button class="cta" data-go="range">See the range <span class="arrow">&rarr;</span></button>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============================ RANGE ============================ -->
+<div class="page" id="page-range" hidden>
+  <section style="padding-bottom:clamp(28px,3.5vw,48px)">
+    <div class="wrap">
+      <p class="eyebrow">The opening range</p>
+      <h2>Four grades. Nothing else at first.</h2>
+      <p class="lede" style="margin-top:18px">
+        A narrow range U can rely on beats a wide one U cannot. Each grade is a
+        size class with a written release standard behind it, not a photograph
+        of one lucky branch.
+      </p>
+    </div>
+
+    <div class="photo photo--band bleed" style="margin:clamp(28px,4vw,50px) 0">
+      <img src="img/branch.jpg" alt="A single manzanita limb, bark peeling from red to pale, lying against soft out-of-focus ground." width="1600" height="1066" loading="lazy">
+    </div>
+
+    <div class="wrap">
+      <div class="tablescroll">
+        <table class="gradetable">
+          <thead>
+            <tr>
+              <th scope="col">Grade</th><th scope="col">Piece</th>
+              <th scope="col">Envelope, in</th><th scope="col">Envelope, cm</th>
+              <th scope="col">Case</th><th scope="col">Indicative</th>
+            </tr>
+          </thead>
+          <tbody id="gradeRows"></tbody>
+        </table>
+      </div>
+
+      <div class="split" style="margin-top:clamp(34px,4vw,54px);align-items:start">
+        <div class="stack">
+          <h3>What an envelope is</h3>
+          <p class="note">
+            The maximum external box a piece may occupy, measured at the widest
+            point on each axis rather than along its longest branch. It is the
+            number that decides whether a piece clears a bracing bar, and it is
+            the number that sets the shipping charge, because size rather than
+            weight prices most parcels.
+          </p>
+        </div>
+        <div class="stack">
+          <h3>Why the figures are provisional</h3>
+          <p class="note">
+            Each envelope is confirmed after the packing trial for that grade,
+            and the confirmed figure becomes the one U are quoted against. The
+            indicative prices are test values used to size the offer. They are
+            not quotations, and no grade has been released for sale.
+          </p>
+        </div>
+      </div>
+
+      <div style="margin-top:clamp(30px,4vw,48px)">
+        <button class="cta-ghost" data-go="exact">Or see the one-of-a-kind pieces <span class="arrow">&rarr;</span></button>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============================ EXACT ============================ -->
+<div class="page" id="page-exact" hidden>
+  <section class="dark">
+    <div class="backdrop"><img src="img/tangle.jpg" alt="" width="1800" height="1200" loading="lazy"></div>
+    <div class="wrap" style="position:relative;z-index:1">
+      <p class="eyebrow">For the layout U have already drawn</p>
+      <h2>The one U saw is the one U get.</h2>
+
+      <div class="split" style="margin-top:clamp(30px,4vw,52px)">
+        <div class="stack">
+          <p class="lede">
+            Some pieces are too particular to describe as a size class. Those are
+            photographed from the front, the side and above, measured in three
+            dimensions, given a serial number, and sold once.
+          </p>
+          <p class="note">
+            One physical item, one inventory record, quantity one. When a serial
+            sells it is marked sold rather than quietly replaced with something
+            similar. Every measurement is taken at the widest point on that axis,
+            not the longest reach of a branch.
+          </p>
+        </div>
+
+        <div class="record">
+          <span class="id">EXACT-0114</span>
+          <dl>
+            <div class="r"><dt>Envelope</dt><dd>22.00 &times; 13.50 &times; 11.75 in</dd></div>
+            <div class="r"><dt>Metric</dt><dd>55.9 &times; 34.3 &times; 29.8 cm</dd></div>
+            <div class="r"><dt>Mass</dt><dd>4.10 lb &middot; 1.86 kg</dd></div>
+            <div class="r"><dt>Trunk &Oslash;</dt><dd>2.25 in at the cut</dd></div>
+            <div class="r"><dt>Forks</dt><dd>3 primary, 11 terminal</dd></div>
+            <div class="r"><dt>Lot</dt><dd>SOURCE-2609-A</dd></div>
+            <div class="r"><dt>Quantity</dt><dd>1</dd></div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============================ ORIGIN ============================ -->
+<div class="page" id="page-origin" hidden>
+  <section style="padding-bottom:clamp(26px,3vw,44px)">
+    <div class="wrap">
+      <p class="eyebrow">Where it came from</p>
+      <h2>One stand, in the Yuba foothills.</h2>
+      <p class="lede" style="margin-top:18px">
+        Roughly a hundred acres of manzanita above Brownsville, in the low
+        foothill country of Yuba County, California. One owner, one caretaker,
+        one source. Nothing is bought in and relabelled.
+      </p>
+    </div>
+
+    <div class="photo photo--band bleed" style="margin:clamp(28px,4vw,50px) 0">
+      <img src="img/stand.jpg" alt="A manzanita stand in low California foothill country, pale glaucous foliage standing above dry gold grass." width="1800" height="1350" loading="lazy">
+    </div>
+
+    <div class="wrap">
+      <div class="split" style="align-items:center">
+        <div class="stack">
+          <h3>Every piece carries its lot.</h3>
+          <div class="lot">SOURCE<i>-</i>2609<i>-</i>A<i>&middot;</i>EXACT<i>-</i>0114</div>
+          <div class="lotkey">
+            <div><b>SOURCE</b><span>The stand it was cut from, by parcel and section.</span></div>
+            <div><b>2609</b><span>Year and month of cutting, not of packing.</span></div>
+            <div><b>A</b><span>The batch that moved through preparation together.</span></div>
+            <div><b>EXACT-0114</b><span>The serial, on unique pieces only.</span></div>
+          </div>
+          <p class="note" style="margin-top:6px">
+            The lot is printed on the carton and recorded against the preparation
+            record for that batch: what was done to the wood, in what order, and
+            on what date. If U need to ask us about a piece a year from now, that
+            code is the whole conversation.
+          </p>
+        </div>
+        <div class="photo photo--tall">
+          <img src="img/peeling.jpg" alt="Manzanita bark peeling in curls from deep red to the pale green beneath." width="931" height="1400" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============================ TRADE ============================ -->
+<div class="page" id="page-trade" hidden>
+  <section style="padding-bottom:clamp(26px,3vw,44px)">
+    <div class="wrap">
+      <p class="eyebrow">Wholesale, OEM and private label</p>
+      <h2>For buyers, not browsers.</h2>
+
+      <div class="split" style="margin-top:clamp(28px,3.5vw,48px);align-items:start">
+        <div class="stack">
+          <p class="lede">
+            The trade sheet carries case packs, master carton and pallet
+            dimensions with weights, lead time from release, minimum order, and
+            the returns and damage procedure. Pricing follows a qualified
+            application, not a public page.
+          </p>
+          <button class="cta">Request the line sheet <span class="arrow">&rarr;</span></button>
+          <p class="note">
+            Demonstration only. This control submits nothing and collects no
+            address.
+          </p>
+        </div>
+
+        <div class="checks">
+          <div class="check"><span class="m">01</span><span><b>Graded, not sorted.</b> A written standard a second worker can follow, so the second case matches the first.</span></div>
+          <div class="check"><span class="m">02</span><span><b>Packed to the envelope.</b> Cartons designed around the box, because size rather than weight sets most parcel charges.</span></div>
+          <div class="check"><span class="m">03</span><span><b>Traceable by lot.</b> Preparation records retained per batch, with reference photographs.</span></div>
+          <div class="check"><span class="m">04</span><span><b>Reorderable by SKU.</b> A list U can repeat, rather than a fresh hunt through a pile every quarter.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="photo photo--band bleed" style="margin-top:clamp(30px,4vw,52px)">
+      <img src="img/limbs.jpg" alt="Arching mahogany manzanita limbs spreading against pale foliage and sky." width="1800" height="1195" loading="lazy">
+    </div>
+  </section>
+</div>
+
+</main>
+
+<footer>
+  <div class="foot-grid">
+    <div>
+      <div class="brand" style="cursor:default;margin-bottom:12px">UNI<i>que</i> Manzanita</div>
+      <p class="spec">Brownsville, Yuba County, California</p>
+    </div>
+    <div>
+      <div class="disclaimers">
+        <p><b>This page is a design preview.</b> It is not a store. No product has been released, no piece has been offered for sale, and no order can be placed.</p>
+        <p><b>Every figure is a working assumption.</b> Grade envelopes, case packs, the specimen record and all prices are planning values held until preparation costs are measured and packing trials are run. They are not quotations.</p>
+        <p><b>No botanical name appears here on purpose.</b> The species has not been determined on the ground by a qualified botanist. Nothing on this page states or implies one.</p>
+        <p><b>No suitability or safety claim is made</b> for any animal, species or enclosure. Care and preparation instructions will be published with the released product, and they will describe what was actually done to the wood rather than what it is guaranteed to do.</p>
+        <p><b>The photographs show manzanita growing wild</b>, licensed from the photographers below. None shows this stand, and none is a photograph of a product. Original product photography replaces them before anything is offered.</p>
+      </div>
+      <div class="credits">
+        Photography: &ldquo;Curvy Curves&rdquo; and &ldquo;The Manzanita Kink&rdquo; by cogdogblog (CC0, CC BY 2.0) &middot;
+        &ldquo;Manzanita texture&rdquo; by Aubrie Johnson (CC0) &middot; &ldquo;Manzanita&rdquo; by Katja Schulz (CC BY 2.0) &middot;
+        &ldquo;Manzanita bark&rdquo; by Alan Schmierer (CC0) &middot; &ldquo;Common manzanita&rdquo; by Paul Asman and Jill Lenoble (CC BY 2.0).
+        Via Wikimedia Commons.
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+
+  var PAGES = [
+    { id: "home",   label: "Home" },
+    { id: "range",  label: "The Range" },
+    { id: "exact",  label: "Exact Pieces" },
+    { id: "origin", label: "Origin" },
+    { id: "trade",  label: "Trade" }
+  ];
+
+  /* ---------- the range. Every value provisional. ---------- */
+  var GRADES = [
+    { sku: "NANO-3",   piece: "Three detail pieces, 6 to 10 in each", env: [10, 5, 4],   msrp: 20, pack: 6 },
+    { sku: "BRANCH-S", piece: "One branching piece, 10 to 14 in",     env: [14, 8, 7],   msrp: 30, pack: 6 },
+    { sku: "BRANCH-M", piece: "One branching piece, 14 to 18 in",     env: [18, 11, 9],  msrp: 40, pack: 6 },
+    { sku: "CLIMB-M",  piece: "One climbing-form piece, 18 to 24 in", env: [24, 14, 12], msrp: 50, pack: 6 }
+  ];
+
+  var cm = function (i) { return (i * 2.54).toFixed(0); };
+  var rows = document.getElementById("gradeRows");
+  GRADES.forEach(function (g) {
+    var tr = document.createElement("tr");
+    tr.innerHTML =
+      '<td class="k">' + g.sku + '</td>' +
+      '<td>' + g.piece + '</td>' +
+      '<td><b>' + g.env.join(" \u00d7 ") + '</b></td>' +
+      '<td>' + g.env.map(cm).join(" \u00d7 ") + '</td>' +
+      '<td>' + g.pack + ' units</td>' +
+      '<td>$' + g.msrp + '</td>';
+    rows.appendChild(tr);
+  });
+
+  /* ---------- navigation between pages ---------- */
+  var navLinks = document.getElementById("navLinks");
+  PAGES.forEach(function (p) {
+    var b = document.createElement("button");
+    b.type = "button"; b.textContent = p.label;
+    b.setAttribute("data-go", p.id);
+    navLinks.appendChild(b);
+  });
+
+  function show(id, push) {
+    if (!PAGES.some(function (p) { return p.id === id; })) id = "home";
+    PAGES.forEach(function (p) {
+      var el = document.getElementById("page-" + p.id);
+      if (el) el.hidden = p.id !== id;
+    });
+    navLinks.querySelectorAll("button").forEach(function (b) {
+      if (b.getAttribute("data-go") === id) b.setAttribute("aria-current", "page");
+      else b.removeAttribute("aria-current");
+    });
+    if (push && location.hash !== "#" + id) {
+      try { history.pushState(null, "", "#" + id); } catch (e) { /* file:// */ }
+    }
+    window.scrollTo({ top: 0, behavior: "instant" in document.documentElement.style ? "instant" : "auto" });
+  }
+
+  document.addEventListener("click", function (e) {
+    var t = e.target.closest("[data-go]");
+    if (!t) return;
+    e.preventDefault();
+    show(t.getAttribute("data-go"), true);
+  });
+
+  window.addEventListener("popstate", function () {
+    show((location.hash || "#home").slice(1), false);
+  });
+
+  show((location.hash || "#home").slice(1), false);
+})();
+</script>
